@@ -7,12 +7,11 @@ using Random = UnityEngine.Random;
 
 public class RandomCollectible : MonoBehaviour
 {
-
-    private void OnTriggerEnter2D(Collider2D other) 
+    private void OnTriggerEnter2D(Collider2D other)
     {
         RepositionCollectible();
     }
-    
+
     void RepositionCollectible()
     {
         float newX = Random.Range(-5, 5);
